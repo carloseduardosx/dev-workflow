@@ -1,3 +1,7 @@
+![CI/CD](https://github.com/dyarleniber/react-workflow-gh-actions/workflows/CI/CD/badge.svg)
+[![codecov](https://codecov.io/gh/carloseduardosx/dev-workflow/branch/master/graph/badge.svg)](https://codecov.io/gh/carloseduardosx/dev-workflow)
+![GitHub](https://img.shields.io/github/license/carloseduardosx/dev-workflow?color=blue)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
