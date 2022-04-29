@@ -1,0 +1,46 @@
+codecov:
+  branch: master
+
+coverage:
+  precision: 2
+  round: up
+  range: "0...90"
+
+  status:
+    project:
+      default:
+        target: auto
+#        threshold: 0.1%
+#        branches: null
+        if_no_uploads: error
+        if_not_found: success
+        if_ci_failed: error
+#        flags: null
+#        paths: null
+
+    patch:
+      default:
+        target: auto
+#        threshold: 5%
+        branches: null
+        if_no_uploads: error
+        if_not_found: success
+        if_ci_failed: error
+        only_pulls: false
+        flags: null
+        paths: null
+
+    changes:
+      default:
+        base: auto
+        branches: null
+        if_no_uploads: error
+        if_not_found: success
+        if_ci_failed: error
+        flags: null
+        paths: null
+
+comment:
+  layout: "reach, diff, flags, files"
+  require_changes: false
+  behavior: default
