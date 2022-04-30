@@ -2,7 +2,7 @@ pull_request_rules:
   - name: Automatic merge on approval and complete CI checks
     conditions:
       - "#approved-reviews-by>=1"
-      - "check-success=CI/CD / build (16.x) (pull_request)"
+      - "check-success=CI/CD"
       - "check-success=codecov/changes"
       - "check-success=codecov/patch"
       - "check-success=codecov/project"
