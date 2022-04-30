@@ -34,3 +34,15 @@ pull_request_rules:
     actions:
       delete_head_branch:
         force: true
+  - name: backport patches to development branch
+    conditions:
+      - base=master
+      - head~=^hotfix/
+    actions:
+      backport:
+        branches:
+          - development
+        assignees:
+          - "{{ author }}"
+        title: "{{ title }} (backport #{{ number }})"
+        body: "This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).\n{{cherry_pick_error}}"
